@@ -134,3 +134,7 @@ input{
     font-size: 20px;
     cursor: pointer; /* Altera o cursor ao passar sobre o input */
 }
+
+article{
+    display: grid;
+}
