@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+/* Usaremos um reset no arquivo CSS para limpar qualquer formatação de origem ou pré-configuração */
+*{
+    margin: 0; /* margem externa */
+    padding: 0; /* margem do conteúdo apartir da tag */
+    box-sizing: border-box; /* indica que o tamanho agora levará em conta até a borda */
+    text-decoration: none; /* Qualquer decoração que
+    tiver nos textos */
+}
+
+/* configurações na tag body */
+body{
+    font-size: 100%; /* reset no font-size:100% */
+    background: linear-gradient(90deg, #0e5499, #0661ac);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #EEEEEE; /* Aplicando color direto no body ele irá aplicar somente nas fontes */
+    font-family: "Archivo Black", sans-serif; /* Atribuindo a fonte descrita no arquivo fonts.css */
+    max-width: 1280px;  /* Tamanho da página para zoom & monitor */
+    margin: 0 auto; /* Margem automática da página */
+    padding: 20px 20px 0px 20px; /* Margem interna da página */
+    overflow: hidden;
+}
+
+/* configurações na tag header */
+header{
+    display: flex; /* possibilita o deslocamento de conteúdo em todo o site desde, top, right, bottom e left */
+    flex-direction: row; /* transforma o conteúdo cabeçalho que por padrão vem em coluna linha */
+    justify-content: space-between; /* cria o espaço no conteúdo que está dentro do header */
+    align-items: center; /* alinha os centeúdos ou seja os itens */
+}
+
+/* #logo_title{
+    flex-direction: column;  colocando a direção em coluna 
+    line-height: 30px;  distância entre as palavras entre coluna 
+} */
+
+h1{
+    font-weight: 100;
+    color: #EEEEEE;
+} 
+
+span{
+    color: #f9c208;
+}
+
+li{
+    display: inline-block; /* desfaz o block e realiza o seguimento das palavras em linha */
+    margin: 20px;
+}
+
+a{
+    font-family: "Anton", sans-serif;
+    color: #EEEEEE;
+}
+
+a:hover{
+    color: #f9c208;
+    transition: 0.5s all; /* faz uma leve transição ao passar o mouse sobre */
+    transform: translateY(10px);
+}
+
+.insc{
+    color: #f9c208;
+    border: 3px solid; /* cria uma borda em volta do link */
+    padding: 10px;
+    border-radius: 50px; /* arredonda os cantos da borda */
+}
+
+.insc:hover{
+    color: #EEEEEE;
+}
+
+main{
+    justify-content: center; /* centraliza os itens da main */
+    display: flex; /* display flexivel, deixa alinha os itens da forma que você deseja */
+    flex-direction: row;
+    margin-top: 80px; /* define o tamanho da margem do texto para o cabeçalho */
+}
+
+h2{
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.h2_chamado{
+    color: #f9c208;
+    font-size: 40;
+}
+
+p{
+    text-align: justify; /* alinha o texto de acordo com o tamanho da div */
+    line-height: 20px;
+    max-width: 700px;
+    padding-top: 40px;
+}
+
+/* classe relacionada a imagem da garota da página */
+.modelo{
+    width: 460px;
+    padding-right: 0;
+}
+
+/* id relacionado a logo da página */
+#logo_title img{
+    width: 250px;
+    margin: auto; /* alinha os itens */
+    padding-right: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column; /* transforma em coluna */
+    width: 60%;
+    border-color: #f9c208;
+}
+
+form [type="submit"]{
+    color: #000000;
+    font-family: "Archivo Black", sans-serif;
+    height: 20px;
+    width: 50%;
+    background-color: #f9c208;
+    padding: 5px 10px 35px 10px;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer; /* Altera o cursor ao passar sobre o input */
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links para o arquivo CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <link rel="icon" type="image/ico" href="img/favicon.ico"> <!-- Tag de icone da página -->
+
+    <title>Qualifica DF - WEBDESIGN</title>
+</head>
+<body>
+    <!-- usando a tag header para parte do cabeçalh -->
+    <header>
+        <div id="logo_title"> <!--  Atribuindo o ID na div para estilizar somente a tag H1 -->
+            <img src="img/qualifica.png" alt="logo">
+        </div>
+
+        <!-- Tag "a" "ul" mais atributos para gerar um link e uma lista desordenada -->
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contatos</a></li>
+            <li><a class="insc" href="#">Faça sua inscrição</a></li>
+        </ul>
+    </header>
+
+    <!-- Parte principal do nosso site dentro do body -->
+    <main>
+        <!-- Tag aside semântica que possue por função um lado do site -->
+        <aside>
+            <!-- Tag de título -->
+            <h2 class="h2_chamado">Cursos profissionalizantes</h2>
+            <!-- Class para estilização do h2 -->
+            <h2>Em todo Distrito Federal</h2>
+
+            <!-- Tag de parágrafo -->
+            <p>
+                Atenção!! Saiu a 2º chamada. Se você foi selecionado compareça nas nossas unidades das 8h às 21h, até o dia 28 de março.(levar RG ou CPF, comprovante de residência e de escolaridade)
+            </p>
+            <form>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">
+                <input id="enviar" type="submit" value="Enviar">
+            </form>
+        </aside>
+        <!-- Tag article é semântica pode ser usada para abrigar também imagem -->
+        <article>
+            <img class="modelo" src="img/aluno.png" alt="aluno">
+        </article>
+    </main>
+</body>
+</html>
