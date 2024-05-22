@@ -14,14 +14,13 @@
 body{
     font-size: 100%; /* reset no font-size:100% */
     background: linear-gradient(90deg, #0e5499, #0661ac);
-    background-repeat: no-repeat;
     background-size: cover;
     color: #EEEEEE; /* Aplicando color direto no body ele irá aplicar somente nas fontes */
     font-family: "Archivo Black", sans-serif; /* Atribuindo a fonte descrita no arquivo fonts.css */
-    max-width: 1280px;  /* Tamanho da página para zoom & monitor */
+    /* max-width: 1280px;   Tamanho da página para zoom & monitor */
     margin: 0 auto; /* Margem automática da página */
-    padding: 20px 20px 0px 20px; /* Margem interna da página */
-    overflow: hidden;
+    padding-top: 20px; /* Margem interna da página */
+    /* overflow: hidden; */
 }
 
 /* configurações na tag header */
@@ -30,6 +29,8 @@ header{
     flex-direction: row; /* transforma o conteúdo cabeçalho que por padrão vem em coluna linha */
     justify-content: space-between; /* cria o espaço no conteúdo que está dentro do header */
     align-items: center; /* alinha os centeúdos ou seja os itens */
+    max-width: 1280px;  /* Tamanho da página para zoom & monitor */
+    margin: auto;
 }
 
 /* #logo_title{
@@ -126,6 +127,12 @@ form [type="submit"]{
     padding: 5px 10px 35px 10px;
 }
 
+form [type="submit"]:hover{
+    background-color: transparent;
+    transition: .0.5s ease-in-out;
+    color: #EEEEEE;
+}
+
 input{
     margin-top: 20px;
     height: 20px;
@@ -136,5 +143,30 @@ input{
 }
 
 article{
-    display: grid;
+    display: grid; /* coloca a imagem da garota no final do body */
+}
+
+footer{
+    display: flex;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    max-width: 100%;
+    height: 27em;
+}
+
+#gdf{
+    width: 250px;
+    margin: 20px;
+}
+
+#df{
+    width: 120px;
+    margin: 20px;
+}
+
+#sedet{
+    width: 135px;
+    margin: 20px;
 }
